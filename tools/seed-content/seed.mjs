@@ -10,7 +10,8 @@
  * - Reescribe las referencias al sitio de origen (/jorgerzt/edsfrescopa) por /{org}/{site}.
  * - Hace preview masivo de páginas y hojas con el Admin API
  *   (POST https://admin.hlx.page/preview/{org}/{site}/{ref}/*).
- * - Activa la Library de da.live (Blocks, Templates, Icons de `docs/library/`) añadiendo la
+ * - Activa la Library de da.live (Blocks, Templates, Icons de `docs/library/` y la extensión
+ *   Block Inspector de adobe-rnd/ew-extensions) añadiendo la
  *   hoja `library` a la configuración del sitio (https://admin.da.live/config/{org}/{site}/),
  *   conservando el resto de hojas que ya existan.
  *
@@ -33,6 +34,8 @@ const LIBRARY = [
   { title: 'Blocks', path: '/docs/library/blocks.json' },
   { title: 'Templates', path: '/docs/library/templates.json' },
   { title: 'Icons', path: '/docs/library/icons.json' },
+  { title: 'Block Inspector', path: 'https://main--ew-extensions--adobe-rnd.aem.live/tools/block-editor/block-editor.html' },
+  { title: 'Accesibilidad', path: '/tools/a11y-check/a11y-check.html' },
 ];
 const DA_ADMIN = 'https://admin.da.live';
 const HLX_ADMIN = 'https://admin.hlx.page';
@@ -166,7 +169,7 @@ async function configureLibrary() {
   form.append('config', JSON.stringify(config));
   const resp = await request(url, { method: 'POST', headers: auth, body: form });
   if (!resp.ok) fail(`No se pudo guardar la configuración del sitio (${resp.status}). ¿Eres admin del sitio?`);
-  return 'configurada (Blocks, Templates, Icons)';
+  return `configurada (${LIBRARY.map((l) => l.title).join(', ')})`;
 }
 console.log(`✔ Library de da.live ${await configureLibrary()}`);
 

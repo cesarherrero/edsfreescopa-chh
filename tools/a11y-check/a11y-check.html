@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Accesibilidad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="data:,">
+    <script src="https://da.live/nx/utils/sdk.js" type="module"></script>
+    <script src="/tools/a11y-check/a11y-check.js" type="module"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/hah7vzn.css">
+    <link rel="stylesheet" href="/tools/a11y-check/a11y-check.css">
+  </head>
+  <body>
+    <header>
+      <h1>Accesibilidad</h1>
+      <button type="button" id="refresh">Volver a analizar</button>
+    </header>
+    <p class="hint">Analiza la última versión guardada del documento.</p>
+    <main id="report" aria-live="polite"></main>
+  </body>
+</html>
