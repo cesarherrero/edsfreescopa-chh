@@ -11,7 +11,7 @@
  * - Hace preview masivo de páginas y hojas con el Admin API
  *   (POST https://admin.hlx.page/preview/{org}/{site}/{ref}/*).
  * - Activa la Library de da.live (Blocks, Templates, Icons de `docs/library/` y la extensión
- *   Block Inspector de adobe-rnd/ew-extensions) añadiendo la
+ *   Block Inspector de adobe-rnd/ew-extensions y el constructor de formularios) añadiendo la
  *   hoja `library` a la configuración del sitio (https://admin.da.live/config/{org}/{site}/),
  *   conservando el resto de hojas que ya existan.
  *
@@ -36,6 +36,7 @@ const LIBRARY = [
   { title: 'Icons', path: '/docs/library/icons.json' },
   { title: 'Block Inspector', path: 'https://main--ew-extensions--adobe-rnd.aem.live/tools/block-editor/block-editor.html' },
   { title: 'Accesibilidad', path: '/tools/a11y-check/a11y-check.html' },
+  { title: 'Formularios', path: '/tools/form-builder/form-builder.html', experience: 'dialog' },
 ];
 const DA_ADMIN = 'https://admin.da.live';
 const HLX_ADMIN = 'https://admin.hlx.page';

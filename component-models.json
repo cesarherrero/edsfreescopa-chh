@@ -223,6 +223,237 @@
     ]
   },
   {
+    "id": "service-form",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "action",
+        "label": "Service URL (endpoint)",
+        "required": true
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "method",
+        "label": "HTTP method",
+        "value": "POST",
+        "options": [
+          {
+            "name": "POST",
+            "value": "POST"
+          },
+          {
+            "name": "PUT",
+            "value": "PUT"
+          },
+          {
+            "name": "GET",
+            "value": "GET"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Columns",
+        "value": "columns-1",
+        "options": [
+          {
+            "name": "1 column",
+            "value": "columns-1"
+          },
+          {
+            "name": "2 columns",
+            "value": "columns-2"
+          },
+          {
+            "name": "3 columns",
+            "value": "columns-3"
+          },
+          {
+            "name": "4 columns",
+            "value": "columns-4"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "submit",
+        "label": "Submit button text",
+        "value": "Enviar"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "success",
+        "label": "Success message"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "error",
+        "label": "Service error message"
+      }
+    ]
+  },
+  {
+    "id": "input-text",
+    "fields": [
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "type",
+        "label": "Field type",
+        "value": "text",
+        "required": true,
+        "options": [
+          {
+            "name": "Text",
+            "value": "text"
+          },
+          {
+            "name": "Email",
+            "value": "email"
+          },
+          {
+            "name": "Phone",
+            "value": "tel"
+          },
+          {
+            "name": "Number",
+            "value": "number"
+          },
+          {
+            "name": "URL",
+            "value": "url"
+          },
+          {
+            "name": "Date",
+            "value": "date"
+          },
+          {
+            "name": "Password",
+            "value": "password"
+          },
+          {
+            "name": "Textarea",
+            "value": "textarea"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "name",
+        "label": "Field name (sent to the service)"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Label",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "placeholder",
+        "label": "Placeholder"
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "required",
+        "label": "Required"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "pattern",
+        "label": "Validation pattern (regex)"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "requiredMessage",
+        "label": "Required error message"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "validationMessage",
+        "label": "Validation error message"
+      }
+    ]
+  },
+  {
+    "id": "input-options",
+    "fields": [
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "type",
+        "label": "Field type",
+        "value": "checkbox",
+        "required": true,
+        "options": [
+          {
+            "name": "Checkbox",
+            "value": "checkbox"
+          },
+          {
+            "name": "Radio button",
+            "value": "radio"
+          },
+          {
+            "name": "Switch",
+            "value": "switch"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "name",
+        "label": "Field name (sent to the service)"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Label",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "placeholder",
+        "label": "Placeholder / help text"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "options",
+        "label": "Options (one per line: value|Text). Empty = single toggle"
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "required",
+        "label": "Required"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "errorMessage",
+        "label": "Required error message"
+      }
+    ]
+  },
+  {
     "id": "table",
     "fields": [
       {
