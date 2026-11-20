@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="data:,">
+    <script src="https://da.live/nx/utils/sdk.js" type="module"></script>
+    <script src="/tools/form-builder/form-builder.js" type="module"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/hah7vzn.css">
+    <link rel="stylesheet" href="/tools/form-builder/form-builder.css">
+  </head>
+  <body>
+    <div class="fb-app" id="app">
+      <div class="fb-topbar">
+        <h1>Constructor de formularios</h1>
+        <div class="fb-topbar-actions">
+          <button type="button" class="fb-btn fb-btn-quiet" id="open-templates">Plantillas</button>
+          <div class="fb-tabs" role="tablist" aria-label="Vista">
+            <button type="button" role="tab" id="tab-edit" aria-selected="true">Editar</button>
+            <button type="button" role="tab" id="tab-preview" aria-selected="false">Vista previa</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="fb-banner" id="selection-banner" hidden></div>
+
+      <div class="fb-layout" data-view="edit">
+        <section class="fb-editor" aria-label="Editor">
+          <details class="fb-card fb-settings" id="settings" open>
+            <summary>
+              <span class="fb-card-title">Ajustes del formulario</span>
+              <span class="fb-card-meta" id="settings-meta"></span>
+            </summary>
+            <div class="fb-card-body" id="settings-body"></div>
+          </details>
+
+          <div class="fb-section-head">
+            <h2>Campos <span class="fb-count" id="field-count">0</span></h2>
+            <p class="fb-help">Arrastra para reordenar · Alt + ↑/↓ con el teclado</p>
+          </div>
+          <ol class="fb-fields" id="fields"></ol>
+
+          <div class="fb-palette" id="palette" aria-label="Añadir campo"></div>
+        </section>
+
+        <section class="fb-preview" aria-label="Vista previa">
+          <div class="fb-preview-bar">
+            <div class="fb-inline">
+              <div class="fb-segmented" id="viewport" role="radiogroup" aria-label="Tamaño de vista previa"></div>
+              <span class="fb-help" id="viewport-size"></span>
+            </div>
+            <label class="fb-check">
+              <input type="checkbox" id="simulate" checked>
+              Simular envío
+            </label>
+          </div>
+          <div class="fb-preview-stage" id="stage">
+            <div class="fb-frame-wrap">
+              <iframe id="preview" title="Vista previa del formulario"></iframe>
+            </div>
+          </div>
+          <div class="fb-payload" id="payload" hidden>
+            <div class="fb-payload-head">
+              <strong>Datos que recibirá el servicio</strong>
+              <button type="button" class="fb-link" id="payload-close">Ocultar</button>
+            </div>
+            <pre id="payload-json"></pre>
+          </div>
+        </section>
+      </div>
+
+      <footer class="fb-footer">
+        <div class="fb-issues" id="issues" aria-live="polite"></div>
+        <div class="fb-footer-actions">
+          <button type="button" class="fb-btn fb-btn-quiet" id="copy">Copiar bloque</button>
+          <button type="button" class="fb-btn fb-btn-primary" id="insert">Insertar en el documento</button>
+        </div>
+      </footer>
+    </div>
+
+    <dialog class="fb-dialog" id="templates">
+      <form method="dialog">
+        <h2>¿Por dónde empezamos?</h2>
+        <p class="fb-help">Elige una plantilla y adáptala. Podrás cambiarlo todo después.</p>
+        <div class="fb-templates" id="template-list"></div>
+        <div class="fb-dialog-actions">
+          <button type="submit" class="fb-btn fb-btn-quiet" value="cancel">Cancelar</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="fb-toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

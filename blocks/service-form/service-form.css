@@ -1,0 +1,196 @@
+.service-form {
+  --service-form-border: var(--color-neutral-500, #b8b8b8);
+  --service-form-accent: var(--color-brand-700, #2b2b2b);
+  --service-form-error: var(--color-alert-800, #c35050);
+  --service-form-success: var(--color-positive-800, #53824c);
+}
+
+.service-form .service-form-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* tablet: máximo 2 columnas */
+@media (width >= 600px) {
+  .service-form[data-columns="2"] .service-form-fields,
+  .service-form[data-columns="3"] .service-form-fields,
+  .service-form[data-columns="4"] .service-form-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* desktop: las columnas configuradas (1-4) */
+@media (width >= 900px) {
+  /* misma especificidad que la regla de tablet para poder sobrescribirla */
+  .service-form[data-columns] .service-form-fields {
+    grid-template-columns: repeat(var(--service-form-columns, 1), minmax(0, 1fr));
+  }
+}
+
+/* los textarea ocupan toda la fila */
+.service-form .input-text-textarea {
+  grid-column: 1 / -1;
+}
+
+.service-form .service-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.service-form .service-form-field > label,
+.service-form .input-options-group legend {
+  font-weight: 600;
+}
+
+.service-form .service-form-required {
+  color: var(--service-form-error);
+}
+
+.service-form input:is([type="text"], [type="email"], [type="tel"], [type="number"], [type="url"], [type="date"], [type="password"]),
+.service-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid var(--service-form-border);
+  border-radius: 4px;
+  font: inherit;
+  background: var(--color-neutral-50, #fff);
+  color: inherit;
+}
+
+.service-form textarea {
+  resize: vertical;
+}
+
+.service-form input:focus-visible,
+.service-form textarea:focus-visible {
+  outline: 2px solid var(--service-form-accent);
+  outline-offset: 2px;
+}
+
+.service-form .is-invalid input,
+.service-form .is-invalid textarea {
+  border-color: var(--service-form-error);
+}
+
+.service-form .service-form-field-error {
+  margin: 0;
+  font-size: var(--body-font-size-xs, 14px);
+  color: var(--service-form-error);
+}
+
+/* opciones */
+.service-form .input-options-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.service-form .input-options-group legend {
+  padding: 0;
+  margin-bottom: 6px;
+}
+
+.service-form .input-options-hint {
+  margin: 0 0 8px;
+  font-size: var(--body-font-size-xs, 14px);
+  color: var(--color-neutral-700, #666);
+}
+
+.service-form .input-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-form .input-options-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.service-form .input-options-option input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--service-form-accent);
+  flex-shrink: 0;
+}
+
+/* switch */
+.service-form .input-options-switch input[role="switch"] {
+  appearance: none;
+  position: relative;
+  width: 40px;
+  height: 22px;
+  border-radius: 11px;
+  background: var(--service-form-border);
+  transition: background-color 0.2s ease;
+}
+
+.service-form .input-options-switch input[role="switch"]::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-neutral-50, #fff);
+  transition: transform 0.2s ease;
+}
+
+.service-form .input-options-switch input[role="switch"]:checked {
+  background: var(--service-form-accent);
+}
+
+.service-form .input-options-switch input[role="switch"]:checked::before {
+  transform: translateX(18px);
+}
+
+.service-form .input-options-switch input[role="switch"]:focus-visible {
+  outline: 2px solid var(--service-form-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-form .input-options-switch input[role="switch"],
+  .service-form .input-options-switch input[role="switch"]::before {
+    transition: none;
+  }
+}
+
+/* acciones y estado */
+.service-form .service-form-actions {
+  margin-top: 32px;
+}
+
+.service-form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.service-form .service-form-status {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.service-form .service-form-status:empty {
+  display: none;
+}
+
+.service-form .service-form-status.is-success {
+  background: var(--color-positive-200, #eff5ef);
+  color: var(--service-form-success);
+}
+
+.service-form .service-form-status.is-error {
+  background: var(--color-alert-200, #ffebeb);
+  color: var(--service-form-error);
+}

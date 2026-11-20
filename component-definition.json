@@ -295,6 +295,125 @@
           }
         },
         {
+          "title": "Service Form",
+          "id": "service-form",
+          "model": "service-form",
+          "filter": "service-form",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"service-form columns-1\"><div><div>action</div><div></div></div><div><div>method</div><div>POST</div></div><div><div>submit</div><div>Enviar</div></div><div><div>success</div><div></div></div><div><div>error</div><div></div></div></div>",
+              "fields": [
+                {
+                  "name": "action",
+                  "selector": "div:nth-child(1)>div:nth-child(2)"
+                },
+                {
+                  "name": "method",
+                  "selector": "div:nth-child(2)>div:nth-child(2)"
+                },
+                {
+                  "name": "submit",
+                  "selector": "div:nth-child(3)>div:nth-child(2)"
+                },
+                {
+                  "name": "success",
+                  "selector": "div:nth-child(4)>div:nth-child(2)"
+                },
+                {
+                  "name": "error",
+                  "selector": "div:nth-child(5)>div:nth-child(2)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Input Text",
+          "id": "input-text",
+          "model": "input-text",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 8,
+              "fields": [
+                {
+                  "name": "type",
+                  "selector": "div:nth-child(1)"
+                },
+                {
+                  "name": "name",
+                  "selector": "div:nth-child(2)"
+                },
+                {
+                  "name": "label",
+                  "selector": "div:nth-child(3)"
+                },
+                {
+                  "name": "placeholder",
+                  "selector": "div:nth-child(4)"
+                },
+                {
+                  "name": "required",
+                  "selector": "div:nth-child(5)"
+                },
+                {
+                  "name": "pattern",
+                  "selector": "div:nth-child(6)"
+                },
+                {
+                  "name": "requiredMessage",
+                  "selector": "div:nth-child(7)"
+                },
+                {
+                  "name": "validationMessage",
+                  "selector": "div:nth-child(8)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Input Options",
+          "id": "input-options",
+          "model": "input-options",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 7,
+              "fields": [
+                {
+                  "name": "type",
+                  "selector": "div:nth-child(1)"
+                },
+                {
+                  "name": "name",
+                  "selector": "div:nth-child(2)"
+                },
+                {
+                  "name": "label",
+                  "selector": "div:nth-child(3)"
+                },
+                {
+                  "name": "placeholder",
+                  "selector": "div:nth-child(4)"
+                },
+                {
+                  "name": "options",
+                  "selector": "div:nth-child(5)"
+                },
+                {
+                  "name": "required",
+                  "selector": "div:nth-child(6)"
+                },
+                {
+                  "name": "errorMessage",
+                  "selector": "div:nth-child(7)"
+                }
+              ]
+            }
+          }
+        },
+        {
           "title": "Table",
           "id": "table",
           "model": "table",
