@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="339px" viewBox="0 0 320 339" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>BK_nomina_XS2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="BK_Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BK_nomina_responsive" transform="translate(-126.000000, -2624.000000)">
+            <g id="BK_nomina_XS2" transform="translate(126.000000, 2624.000000)">
+                <rect id="bg" fill="#09CAFF" x="0" y="235" width="104" height="104"></rect>
+                <rect id="bg" fill="#5DF1D5" x="234" y="149" width="86" height="86"></rect>
+                <g id="Resalte" fill="#FFEB00">
+                    <rect id="bg" x="0" y="0" width="234" height="235"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

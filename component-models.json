@@ -145,6 +145,912 @@
     ]
   },
   {
+    "id": "content-block",
+    "fields": [
+      {
+        "component": "select",
+        "name": "type",
+        "label": "Type",
+        "valueType": "string",
+        "value": "image",
+        "options": [
+          {
+            "name": "Image and text (Imagen derecha / izquierda)",
+            "value": "image"
+          },
+          {
+            "name": "Image centred on the right (Imagen centrado derecha)",
+            "value": "centered"
+          },
+          {
+            "name": "Video and text, or video gallery (Vídeo texto / Vídeo galería)",
+            "value": "video"
+          },
+          {
+            "name": "Video for distributor pages (Vídeo distribuidora)",
+            "value": "video-dist"
+          },
+          {
+            "name": "Landing banner with form (Banner formulario)",
+            "value": "form"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "imagePosition",
+        "label": "Image position",
+        "valueType": "string",
+        "value": "right",
+        "condition": {
+          "===": [
+            {
+              "var": "type"
+            },
+            "image"
+          ]
+        },
+        "options": [
+          {
+            "name": "Right",
+            "value": "right"
+          },
+          {
+            "name": "Left",
+            "value": "left"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "imageStyle",
+        "label": "Image style",
+        "valueType": "string",
+        "value": "standard",
+        "condition": {
+          "===": [
+            {
+              "var": "type"
+            },
+            "image"
+          ]
+        },
+        "options": [
+          {
+            "name": "Standard (top left of the square)",
+            "value": "standard"
+          },
+          {
+            "name": "Top right of the square",
+            "value": "top-right"
+          },
+          {
+            "name": "Centred, inside the square",
+            "value": "in"
+          },
+          {
+            "name": "Centred, outside the square",
+            "value": "out"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "columns",
+        "label": "Columns (text - image)",
+        "description": "Width of the text and of the image, out of 12 grid columns, from tablet up.",
+        "valueType": "string",
+        "value": "8-4",
+        "condition": {
+          "===": [
+            {
+              "var": "type"
+            },
+            "image"
+          ]
+        },
+        "options": [
+          {
+            "name": "8 - 4",
+            "value": "8-4"
+          },
+          {
+            "name": "7 - 4",
+            "value": "7-4"
+          },
+          {
+            "name": "7 - 5",
+            "value": "7-5"
+          },
+          {
+            "name": "6 - 5",
+            "value": "6-5"
+          },
+          {
+            "name": "5 - 6",
+            "value": "5-6"
+          },
+          {
+            "name": "5 - 7",
+            "value": "5-7"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "imageVariant",
+        "label": "Variant",
+        "description": "Shape and decoration of the image and its colour square. The small square and the double square follow the image position.",
+        "valueType": "string",
+        "value": "standard",
+        "condition": {
+          "===": [
+            {
+              "var": "type"
+            },
+            "image"
+          ]
+        },
+        "options": [
+          {
+            "name": "Large colour square behind the image",
+            "value": "standard"
+          },
+          {
+            "name": "Small colour square in the bottom corner of the image",
+            "value": "square"
+          },
+          {
+            "name": "Smaller image, raised over the colour square",
+            "value": "ca"
+          },
+          {
+            "name": "Large image (584 x 458) without offset, text with side margins",
+            "value": "bki"
+          },
+          {
+            "name": "Wide, low image (556 x 278) filling the column",
+            "value": "bki-slim"
+          },
+          {
+            "name": "Image that stays visible while the text scrolls",
+            "value": "sticky"
+          },
+          {
+            "name": "Two stacked squares (pink and turquoise) in the bottom corner",
+            "value": "bkj-double-square"
+          },
+          {
+            "name": "Tilted colour squares scattered around the image",
+            "value": "banner-bkj"
+          },
+          {
+            "name": "Small colour squares lined up at the bottom, on both sides",
+            "value": "banner-bkj-mini"
+          },
+          {
+            "name": "Large orange square with the bk. logo and colour squares",
+            "value": "banner-bkj-main"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "linkStyle",
+        "label": "Link style",
+        "description": "Look of the link: orange text with an arrow, or primary button.",
+        "valueType": "string",
+        "value": "text-link",
+        "condition": {
+          "===": [
+            {
+              "var": "type"
+            },
+            "image"
+          ]
+        },
+        "options": [
+          {
+            "name": "Orange text link",
+            "value": "text-link"
+          },
+          {
+            "name": "Primary button",
+            "value": "button"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "color",
+        "label": "Color",
+        "description": "Image: square behind the image (default none). Video: square behind the video (orange). Video distribuidora: square (yellow). Banner formulario: yellow or cyan. A colour the type does not support uses its default.",
+        "valueType": "string",
+        "value": "",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "image",
+              "video",
+              "video-dist",
+              "form"
+            ]
+          ]
+        },
+        "options": [
+          {
+            "name": "Default for the type",
+            "value": ""
+          },
+          {
+            "name": "Orange",
+            "value": "orange"
+          },
+          {
+            "name": "Yellow",
+            "value": "yellow"
+          },
+          {
+            "name": "Cyan",
+            "value": "cyan"
+          },
+          {
+            "name": "Green",
+            "value": "green"
+          },
+          {
+            "name": "Gray business",
+            "value": "gray-business"
+          },
+          {
+            "name": "Dark grey",
+            "value": "gray-dark"
+          },
+          {
+            "name": "BKJ yellow",
+            "value": "bkj-yellow"
+          },
+          {
+            "name": "BKJ turquoise",
+            "value": "bkj-turquoise"
+          },
+          {
+            "name": "BKJ blue",
+            "value": "bkj-blue"
+          },
+          {
+            "name": "BKJ red",
+            "value": "bkj-red"
+          },
+          {
+            "name": "BKI green",
+            "value": "bki-green"
+          },
+          {
+            "name": "BKI orange",
+            "value": "bki-orange"
+          },
+          {
+            "name": "CA dark grey",
+            "value": "ca-grey-dark"
+          },
+          {
+            "name": "CA input grey",
+            "value": "ca-grey-input"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "watermark",
+        "label": "Watermark",
+        "description": "Large background text behind the video, desktop only.",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "type"
+            },
+            "video"
+          ]
+        }
+      },
+      {
+        "component": "boolean",
+        "name": "watermarkSmall",
+        "label": "Small watermark on the left",
+        "valueType": "boolean",
+        "condition": {
+          "===": [
+            {
+              "var": "type"
+            },
+            "video"
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "id",
+        "label": "ID",
+        "description": "Anchor id of the block.",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title type / size",
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "H1",
+            "value": "h1"
+          },
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "titleLevel",
+        "label": "Title level",
+        "description": "Heading element of the title. Default: H2.",
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "H1",
+            "value": "1"
+          },
+          {
+            "name": "H2",
+            "value": "2"
+          },
+          {
+            "name": "H3",
+            "value": "3"
+          },
+          {
+            "name": "H4",
+            "value": "4"
+          },
+          {
+            "name": "H5",
+            "value": "5"
+          },
+          {
+            "name": "H6",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "titleDescriptor",
+        "label": "Title descriptor",
+        "description": "Short text above the title, shown in uppercase.",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleDescriptorLevel",
+        "label": "Title descriptor level",
+        "description": "Element of the descriptor. P keeps the descriptor size and look but is not a heading.",
+        "valueType": "string",
+        "value": "1",
+        "options": [
+          {
+            "name": "H1",
+            "value": "1"
+          },
+          {
+            "name": "H2",
+            "value": "2"
+          },
+          {
+            "name": "H3",
+            "value": "3"
+          },
+          {
+            "name": "H4",
+            "value": "4"
+          },
+          {
+            "name": "H5",
+            "value": "5"
+          },
+          {
+            "name": "H6",
+            "value": "6"
+          },
+          {
+            "name": "P (paragraph)",
+            "value": "p"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "titleDescriptorSize",
+        "label": "Title descriptor size",
+        "description": "Visual size of the descriptor.",
+        "valueType": "string",
+        "value": "h6",
+        "options": [
+          {
+            "name": "H1",
+            "value": "h1"
+          },
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "titleSubtitle",
+        "label": "Title subtitle",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "titleStandfirst",
+        "label": "Title standfirst",
+        "description": "Shown after the accent line.",
+        "valueType": "string"
+      },
+      {
+        "component": "boolean",
+        "name": "titleShowLine",
+        "label": "Show accent line",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text",
+        "name": "titleId",
+        "label": "Title ID",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleVariant",
+        "label": "Title style: variant",
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Secondary",
+            "value": "title--secondary"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "titleLineColor",
+        "label": "Title style: line color",
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Cyan",
+            "value": "title--cyan"
+          },
+          {
+            "name": "Yellow",
+            "value": "title--yellow"
+          },
+          {
+            "name": "Gray business",
+            "value": "title--gray-business"
+          },
+          {
+            "name": "Gray dark",
+            "value": "title--gray-dark"
+          },
+          {
+            "name": "BKJ yellow",
+            "value": "title--bkj-yellow"
+          },
+          {
+            "name": "BKJ turquoise",
+            "value": "title--bkj-turquoise"
+          },
+          {
+            "name": "BKJ blue",
+            "value": "title--bkj-blue"
+          },
+          {
+            "name": "CA grey input",
+            "value": "title--ca-grey-input"
+          },
+          {
+            "name": "BKI green",
+            "value": "title--bki-green"
+          },
+          {
+            "name": "BKI orange",
+            "value": "title--bki-orange"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "standfirst",
+        "label": "Standfirst",
+        "valueType": "string",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "image",
+              "centered",
+              "video-dist",
+              "form"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Text",
+        "valueType": "string",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "image",
+              "centered"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description (colour box)",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "type"
+            },
+            "form"
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "valueType": "string",
+        "multi": false,
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "image",
+              "centered",
+              "form"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image alternative text",
+        "description": "Empty: the image is decorative.",
+        "valueType": "string",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "image",
+              "centered",
+              "form"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "imageTitle",
+        "label": "Image caption",
+        "valueType": "string",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "image",
+              "centered",
+              "form"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "boolean",
+        "name": "imageDisplayPopupTitle",
+        "label": "Display caption as pop-up",
+        "valueType": "boolean",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "image",
+              "centered",
+              "form"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "imageLink",
+        "label": "Image link",
+        "valueType": "string",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "image",
+              "centered",
+              "form"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "boolean",
+        "name": "imageLinkNewTab",
+        "label": "Open image link in new tab",
+        "valueType": "boolean",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "image",
+              "centered",
+              "form"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "primaryLink",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "primaryLinkText",
+        "label": "Link text",
+        "description": "A link without text is not shown.",
+        "valueType": "string"
+      },
+      {
+        "component": "boolean",
+        "name": "primaryLinkNewTab",
+        "label": "Open link in new tab",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text",
+        "name": "primaryLinkIcon",
+        "label": "Link icon",
+        "description": "Only for the button style.",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "primaryLinkAccessibilityLabel",
+        "label": "Link accessibility label",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "secondaryLink",
+        "label": "Secondary link",
+        "valueType": "string",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "video",
+              "video-dist"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "secondaryLinkText",
+        "label": "Secondary link text",
+        "description": "A link without text is not shown.",
+        "valueType": "string",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "video",
+              "video-dist"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "boolean",
+        "name": "secondaryLinkNewTab",
+        "label": "Open secondary link in new tab",
+        "valueType": "boolean",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "video",
+              "video-dist"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "secondaryLinkIcon",
+        "label": "Secondary link icon",
+        "description": "Only for the button style.",
+        "valueType": "string",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "video",
+              "video-dist"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "secondaryLinkAccessibilityLabel",
+        "label": "Secondary link accessibility label",
+        "valueType": "string",
+        "condition": {
+          "in": [
+            {
+              "var": "type"
+            },
+            [
+              "video",
+              "video-dist"
+            ]
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "form",
+        "label": "Form (fragment URL)",
+        "description": "Fragment with the form, Experience Fragment or Embed shown in the form column.",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "type"
+            },
+            "form"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "content-block-video",
+    "fields": [
+      {
+        "component": "text",
+        "name": "url",
+        "label": "Video URL",
+        "description": "YouTube video or playlist URL (or video id). Video and text: one video. Gallery: two or more. Video distribuidora uses the first one.",
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "label",
+        "label": "Label",
+        "description": "Text of the gallery list and accessible title of the player.",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {

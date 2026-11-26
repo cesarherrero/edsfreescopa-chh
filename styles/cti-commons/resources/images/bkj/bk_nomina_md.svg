@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="360px" viewBox="0 0 256 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>BK_nomina_MD2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="BK_Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BK_nomina_responsive" transform="translate(-876.000000, -1082.000000)">
+            <g id="Group-3" transform="translate(150.000000, 1082.000000)">
+                <g id="BK_nomina_MD2" transform="translate(430.000000, 0.000000)">
+                    <rect id="bg" fill="#09CAFF" x="296" y="0" width="104" height="104"></rect>
+                    <rect id="bg" fill="#5DF1D5" x="400" y="24" width="80" height="80"></rect>
+                    <g id="Resalte" transform="translate(296.000000, 104.000000)" fill="#FFEB00">
+                        <rect id="bg" x="0" y="0" width="256" height="256"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

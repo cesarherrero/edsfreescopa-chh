@@ -12,6 +12,7 @@
       "cards",
       "carousel",
       "columns",
+      "content-block",
       "embed",
       "fragment",
       "form",
@@ -59,6 +60,12 @@
     "components": [
       "text",
       "image"
+    ]
+  },
+  {
+    "id": "content-block",
+    "components": [
+      "content-block-video"
     ]
   },
   {

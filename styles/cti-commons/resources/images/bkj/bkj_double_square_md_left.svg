@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="574px" height="296px" viewBox="0 0 574 296" version="1.1">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>BK_double-square_MD</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 294 0 294 296 0 296"/>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" id="BK_Double-square" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BK_double-square_responsive" transform="translate(-560.000000, -1086.000000)">
+            <g id="Group" transform="translate(152.000000, 1086.000000)">
+                <g id="BK_double-square_MD" transform="translate(408.000000, 0.000000)">
+                    <g id="img" transform="translate(168.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#path-1"/>
+                        </mask>
+                        <use id="img_noresidentes_banner" fill="#D8D8D8" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#path-1"/>
+                    </g>
+                    <g id="componente" transform="translate(368.000000, 128.000000)">
+                        
+                        <rect id="bg" fill="#3EEFCE" x="94" y="40" width="56" height="56"/>
+                        <rect id="bg" fill="#FFE700" x="94" y="96" width="75" height="75"/>
+                        
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

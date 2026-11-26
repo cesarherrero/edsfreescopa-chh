@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="555px" height="297px" viewBox="0 0 555 297" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>BK_joven_MD</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 296 0 296 296 0 296"></polygon>
+    </defs>
+    <g id="BK_Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BK_joven_responsive" transform="translate(-577.000000, -1114.000000)">
+            <g id="Group-2" transform="translate(150.000000, 1083.000000)">
+                <g id="BK_joven_MD" transform="translate(427.000000, 31.000000)">
+                    <g id="img_noresidentes_banner-2" transform="translate(190.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="img_noresidentes_banner" fill="#D8D8D8" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="composicion" transform="translate(0.000000, 31.000000)">
+                        <rect id="bg" fill="#FF7300" x="110.061943" y="185.387379" width="80" height="80"></rect>
+                        <polygon id="bg" fill="#FFEB00" transform="translate(63.000000, 35.000000) rotate(-15.000000) translate(-63.000000, -35.000000) " points="35.0110189 7.01101144 91 7 90.9889811 62.9889886 35 63"></polygon>
+                        <polygon id="bg" fill="#FF4B74" transform="translate(520.292856, 231.116020) rotate(-15.000000) translate(-520.292856, -231.116020) " points="492.303875 203.127031 548.292856 203.11602 548.281837 259.105008 492.292856 259.11602"></polygon>
+                        <polygon id="bg" fill="#3EEFCE" transform="translate(55.000000, 210.000000) rotate(30.000000) translate(-55.000000, -210.000000) " points="15 170 94.972743 170.027246 95 250 15.027257 249.972754"></polygon>
+                        <polygon id="bg" fill="#B1F6FF" transform="translate(520.651015, 161.292856) rotate(15.000000) translate(-520.651015, -161.292856) " points="492.651015 133.292856 548.639996 133.303868 548.651015 189.292856 492.662034 189.281845"></polygon>
+                        <polygon id="bg" fill="#FF4B74" transform="translate(141.000000, 136.000000) rotate(15.000000) translate(-141.000000, -136.000000) " points="101 96 180.984259 96.0157306 181 176 101.015741 175.984269"></polygon>
+                        <rect id="bg" fill="#09CAFF" x="0" y="99" width="56" height="56"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

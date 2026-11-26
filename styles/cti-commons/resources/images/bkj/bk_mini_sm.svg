@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="380px" height="222px" viewBox="0 0 380 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>BK_mini_SM</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 220 0 220 222 0 222"></polygon>
+    </defs>
+    <g id="BK_Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BK_mini_responsive" transform="translate(-512.000000, -1731.000000)">
+            <g id="BK_mini_SM" transform="translate(512.000000, 1731.000000)">
+                <g id="img" transform="translate(120.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="img_noresidentes_banner" fill="#D8D8D8" xlink:href="#path-1"></use>
+                </g>
+                <g id="Composicion" transform="translate(0.000000, 102.000000)">
+                    <rect id="bg" fill="#B1F6FF" x="40" y="80" width="40" height="40"></rect>
+                    <rect id="bg" fill="#09CAFF" x="80" y="40" width="40" height="40"></rect>
+                    <rect id="bg" fill="#FFEB00" x="40" y="40" width="40" height="40"></rect>
+                    <rect id="bg" fill="#3EEFCE" x="0" y="80" width="40" height="40"></rect>
+                    <rect id="bg" fill="#FF4B74" x="80" y="80" width="40" height="40"></rect>
+                    <rect id="bg" fill="#FF4B74" x="80" y="0" width="40" height="40"></rect>
+                    <rect id="bg" fill="#FF7300" x="340" y="80" width="40" height="40"></rect>
+                    <rect id="bg" fill="#3EEFCE" x="340" y="40" width="40" height="40"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
