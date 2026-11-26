@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="717px" height="390px" viewBox="0 0 717 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>BK_joven_LG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 390 0 390 390 0 390"></polygon>
+    </defs>
+    <g id="BK_Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BK_joven_responsive" transform="translate(-723.000000, -364.000000)">
+            <g id="BK_joven_LG" transform="translate(723.000000, 364.000000)">
+                <g id="img" transform="translate(248.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="img_noresidentes_banner" fill="#D8D8D8" xlink:href="#path-1"></use>
+                </g>
+                <g id="Composicion" transform="translate(0.000000, 72.000000)">
+                    <rect id="bg" fill="#FF7300" x="144" y="214" width="104" height="104"></rect>
+                    <rect id="bg" fill="#FFEB00" transform="translate(96.000000, 40.000000) rotate(-15.000000) translate(-96.000000, -40.000000) " x="64" y="8" width="64" height="64"></rect>
+                    <rect id="bg" fill="#FF4B74" transform="translate(677.000000, 278.191836) rotate(-15.000000) translate(-677.000000, -278.191836) " x="645" y="246.191836" width="64" height="64"></rect>
+                    <rect id="bg" fill="#3EEFCE" transform="translate(73.000000, 247.000000) rotate(30.000000) translate(-73.000000, -247.000000) " x="21" y="195" width="104" height="104"></rect>
+                    <rect id="bg" fill="#B1F6FF" transform="translate(677.000000, 199.000000) rotate(15.000000) translate(-677.000000, -199.000000) " x="645" y="167" width="64" height="64"></rect>
+                    <rect id="bg" fill="#FF4B74" transform="translate(184.000000, 150.000000) rotate(15.000000) translate(-184.000000, -150.000000) " x="132" y="98" width="104" height="104"></rect>
+                    <rect id="bg" fill="#09CAFF" x="0" y="112" width="64" height="64"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

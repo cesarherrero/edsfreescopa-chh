@@ -176,10 +176,6 @@
   src: local('Arial');
 }
 
-html, body {
-  min-height: 100dvh;
-}
-
 html.adobe-ue-preview,
 html.adobe-ue-edit {
   height: unset
@@ -190,19 +186,8 @@ html.adobe-ue-edit body {
   height: unset
 }
 
-html {
-  font-size: 62.5%;
-}
-
+/* Base typography, colours and layout come from the cti-commons site CSS (cti-commons/css/site.min.css). */
 body {
-  font: normal normal normal 18px/24px Roboto, sans-serif;
-  margin: 0;
-  color: #58181D;
-  background-color:#fff;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
-  min-height: 100dvh;
   counter-reset: my-card-counter;
 }
 
@@ -211,16 +196,7 @@ body:not(.appear) {
 }
 
 header {
-  grid-row: 1;
   height: var(--nav-height);
-}
-
-main {
-  grid-row: 2;
-}
-
-footer {
-  grid-row: 3;
 }
 
 header .header,
@@ -233,120 +209,9 @@ footer .footer[data-block-status="loaded"] {
   visibility: visible;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-  line-height: 1.25;
-  scroll-margin: 40px;
-}
-
-h1 {
-  font: normal normal normal 56px/56px Baskerville, serif;
-  letter-spacing: var(--type-display-1-letter-spacing);
-}
-
-h2 {
-  font: normal normal normal 48px/52px Baskerville, serif;
-  letter-spacing: var(--type-display-2-letter-spacing);
-}
-
-h3 {
-  font: normal normal normal 36px/42px Baskerville, serif;
-  letter-spacing: var(--type-display-3-letter-spacing);
-}
-
-h4 {
-  font: normal normal normal 32px/32px Baskerville, serif;
-  letter-spacing: 0;
-  margin-bottom: 10px;
-}
-
-h5 {
-  font: normal normal normal 24px/30px Baskerville, serif;
-  letter-spacing: 0
-}
-
-h6 {
-  font: var(--type-headline-2-default-font);
-  letter-spacing: var(--type-headline-2-default-letter-spacing);
-}
-
-p {
-  font: normal normal normal 18px/24px Roboto, sans-serif;
-  letter-spacing: 0;
-}
-
-
-
-p,
-dl,
-ol,
-ul,
-pre,
-blockquote {
-  margin-top: .5em;
-  margin-bottom: 1.5625em;
-} 
-
-p+p {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-hr {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  border: 0;
-  border-bottom: var(--shape-border-width-1) solid var(--color-neutral-300);
-}
-
-code,
-pre {
-  font: var(--type-body-2-default-font);
-  letter-spacing: var(--type-body-2-default-letter-spacing);
-  font-family: var(--type-fixed-font-family);
-}
-
-pre {
-  overflow: scroll;
-}
-
-main pre {
-  background-color: var(--color-neutral-300);
-  padding: 1em;
-  border-radius: 0.25em;
-  overflow-x: auto;
-  white-space: pre;
-}
-
-main > div {
-  margin: var(--spacing-xbig) var(--spacing-small);
-}
-
-input,
-textarea,
-select,
-button {
-  font: inherit;
-}
-
-/* links */
-a:not(.dropin-design a) {
-  color: var(--frescopa-color-text);
-  letter-spacing: var(--type-body-1-strong-letter-spacing);
-  text-decoration: underline solid transparent;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 8px;
-  transition: text-decoration 0.5s ease;
-}
-
-a:not(.dropin-design a):hover {
-  text-decoration: underline solid currentcolor;
+/* AEM components sit in floated .aem-GridColumn wrappers, so their margins never collapse */
+main > .section > div {
+  display: flow-root;
 }
 
 /* buttons */
@@ -399,65 +264,6 @@ button.button.secondary {
 main a.button.secondary:hover,
 button.button.secondary:hover {
   color: var(--color-brand-600);
-}
-
-main blockquote {
-  font-style: italic;
-  margin: 3rem;
-  text-indent: -1rem;
-  hanging-punctuation: first;
-}
-
-main blockquote p::before {
-  content: '“';
-  line-height: 0;
-}
-
-main blockquote p::after {
-  content: '”';
-  line-height: 0;
-}
-
-main img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
-.icon {
-  display: inline-block;
-  height: 2.4rem;
-  width: 2.4rem;
-}
-
-.icon img {
-  height: 100%;
-  width: 100%;
-}
-
-/* sections */
-main > .section {
-  margin: var(--spacing-xbig) 0;
-}
-
-main > .section > div {
-  max-width: 1360px;
-  margin: auto;
-  padding: 0 var(--spacing-medium);
-}
-
-main > .section:first-of-type {
-  margin-top: 30px;
-}
-
-@media (width >= 900px) {
-  main > .section:first-of-type {
-    margin-top: 70px;
-  }
-
-  main > .section > div {
-    padding: 0 var(--spacing-big);
-  }
 }
 
 /* section metadata */

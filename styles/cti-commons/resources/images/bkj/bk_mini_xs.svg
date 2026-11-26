@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="200px" viewBox="0 0 320 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>BK_mini_XS</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 200 0 200 200 0 200"></polygon>
+    </defs>
+    <g id="BK_Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BK_mini_responsive" transform="translate(-124.000000, -2561.000000)">
+            <g id="BK_mini_XS" transform="translate(124.000000, 2561.000000)">
+                <g id="img" transform="translate(120.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="img_noresidentes_banner" fill="#D8D8D8" xlink:href="#path-1"></use>
+                </g>
+                <g id="Composicion" transform="translate(0.000000, 80.000000)">
+                    <g id="Secundario/Acción" transform="translate(40.000000, 80.000000)" fill="#B1F6FF">
+                        <g id="04_Content/Banner/Action_default">
+                            <g id="00_Basic/Colors/bk_amarillo100">
+                                <rect id="bg" x="0" y="0" width="40" height="40"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <rect id="bg" fill="#09CAFF" x="80" y="40" width="40" height="40"></rect>
+                    <rect id="bg" fill="#FFEB00" x="40" y="40" width="40" height="40"></rect>
+                    <rect id="bg" fill="#3EEFCE" x="0" y="80" width="40" height="40"></rect>
+                    <rect id="bg" fill="#FF4B74" x="80" y="80" width="40" height="40"></rect>
+                    <rect id="bg" fill="#FF4B74" x="80" y="0" width="40" height="40"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

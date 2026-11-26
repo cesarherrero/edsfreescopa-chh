@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390px" height="390px" viewBox="0 0 390 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>BK_nomina_XL2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="BK_Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BK_nomina_responsive" transform="translate(-1050.000000, -364.000000)">
+            <g id="Banner_LG" transform="translate(150.000000, 364.000000)">
+                <g id="BK_nomina_XL2" transform="translate(510.000000, 0.000000)">
+                    <rect id="bg" fill="#09CAFF" x="390" y="0" width="104" height="104"></rect>
+                    <rect id="bg" fill="#FF7300" x="676" y="206" width="80" height="80"></rect>
+                    <rect id="bg" fill="#5DF1D5" x="494" y="24" width="80" height="80"></rect>
+                    <rect id="bg" fill="#B1F6FF" x="676" y="286" width="104" height="104"></rect>
+                    <g id="Resalte" transform="translate(390.000000, 104.000000)" fill="#FFEB00">
+                        <polygon id="bg" points="0 0 286 0 286 286 0 286"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

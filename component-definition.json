@@ -207,6 +207,40 @@
           }
         },
         {
+          "title": "Content Block",
+          "id": "content-block",
+          "model": "content-block",
+          "filter": "content-block",
+          "plugins": {
+            "da": {
+              "name": "content-block",
+              "type": "key-value-block"
+            }
+          }
+        },
+        {
+          "title": "Content Block Video",
+          "id": "content-block-video",
+          "model": "content-block-video",
+          "plugins": {
+            "da": {
+              "name": "content-block-video",
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "url",
+                  "selector": "div:nth-child(1)"
+                },
+                {
+                  "name": "label",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          }
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "model": "fragment",

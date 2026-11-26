@@ -180,6 +180,8 @@ async function loadEager(doc) {
   }
   const main = doc.querySelector('main');
   if (main) {
+    // AEM page content is main.container (cti-commons container_layout)
+    main.classList.add('container');
     decorateMain(main);
     doc.body.classList.add('appear');
     await loadSection(main.querySelector('.section'), waitForFirstImage);

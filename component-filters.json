@@ -12,6 +12,7 @@
       "cards",
       "carousel",
       "columns",
+      "content-block",
       "embed",
       "fragment",
       "form",
@@ -67,8 +68,12 @@
     "components": [
       "input-text",
       "input-options"
-    ]
+    
   },
+  "id": "content-block",
+    "components": [
+      "content-block-video"
+    ],
   {
     "id": "table",
     "rte": {

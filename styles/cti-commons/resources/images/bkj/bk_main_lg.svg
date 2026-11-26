@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 527 242" style="enable-background:new 0 0 527 242;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{clip-path:url(#SVGID_4_);}
+	.st3{fill:#F96A00;}
+	.st4{fill:#FFFFFE;}
+	.st5{fill:url(#SVGID_5_);}
+	.st6{fill:#3EEFCE;}
+	.st7{fill:url(#SVGID_6_);}
+	.st8{fill:#09CAFF;}
+	.st9{fill:#FFEB00;}
+	.st10{fill:#FF4B74;}
+</style>
+<pattern  y="242" width="77" height="77" patternUnits="userSpaceOnUse" id="pattern0" viewBox="0 -77 77 77" style="overflow:visible;">
+	<g>
+		<rect y="-77" class="st0" width="77" height="77"/>
+		<g>
+			<g>
+				<defs>
+					<rect id="SVGID_1_" y="-77" width="77" height="77"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="surface8_1_" class="st1">
+					<g transform="matrix(0.13874,0,0,0.138741,0,0)">
+						
+							<image style="overflow:visible;enable-background:new    ;" width="555" height="555" id="image7_1_" xlink:href="5E75357A4993313C.jpg"  transform="matrix(0.1387 0 0 -0.1387 0 0)">
+						</image>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</pattern>
+<pattern  y="242" width="170" height="170" patternUnits="userSpaceOnUse" id="pattern1" viewBox="0 -170 170 170" style="overflow:visible;">
+	<g>
+		<rect y="-170" class="st0" width="170" height="170"/>
+		<g>
+			<g>
+				<defs>
+					<rect id="SVGID_3_" y="-170" width="170" height="170"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="surface12_1_" class="st2">
+					<g transform="matrix(0.204205,0,0,0.204205,0,0)">
+						
+							<image style="overflow:visible;enable-background:new    ;" width="555" height="555" id="image11_1_" xlink:href="5E75357A4993313D.jpg"  transform="matrix(0.2042 0 0 -0.2042 0 0)">
+						</image>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</pattern>
+<g id="surface3">
+	<path class="st3" d="M139.2,0h217.8v218H139.2V0z"/>
+	<path class="st4" d="M309.9,141.6h12v-12h-12V141.6z"/>
+	<path class="st4" d="M242.3,118.5c0-16.5-6.4-23.9-23.6-23.9c-7.5,0-12.7,0.6-16.5,3.7V75.9h-12.2v43.7c0,16.7,7.4,22.2,26.3,22.2
+		C233.8,141.8,242.3,136.7,242.3,118.5 M229.7,117c0,13.9-2.2,16-13.5,16c-12.5,0-14.5-2.1-14.5-16c0-11.8,3.9-13.4,13.9-13.4
+		C225.8,103.6,229.7,105.2,229.7,117"/>
+	<path class="st4" d="M261.5,122.7v18.5h-12.1V75.9h12.2v36.4h2.3c3.6,0,4.8-0.6,7.4-3.1l14.3-13.8h14l-21.7,21.8l23.3,23.9h-15.6
+		l-14.9-15.7c-2.5-2.6-3.5-2.8-7.1-2.8H261.5z"/>
+	<pattern  id="SVGID_5_" xlink:href="#pattern0" patternTransform="matrix(1.0111 0 0 -1.0119 436.4534 -16991.1309)">
+	</pattern>
+	<path class="st5" d="M357.1,140.1h77.9V218h-77.9V140.1z"/>
+	<path class="st6" d="M357.1,140.1h77.9V218h-77.9V140.1z"/>
+	<pattern  id="SVGID_6_" xlink:href="#pattern1" patternTransform="matrix(0.9698 0.2601 0.2598 -0.9706 1809.8989 -14670.4043)">
+	</pattern>
+	<path class="st7" d="M29.4,79.5L139.4,109l-29.4,110L0,189.5L29.4,79.5z"/>
+	<path class="st8" d="M29.4,79.5L139.4,109l-29.4,110L0,189.5L29.4,79.5z"/>
+	<path class="st9" d="M309.2,194.1h47.9V242h-47.9V194.1z"/>
+	<path class="st9" d="M485.7,151.3l40.6,25.4l-25.4,40.7l-40.6-25.4L485.7,151.3z"/>
+	<path class="st8" d="M444,92.5l46.1,13.2l-13.2,46.1l-46.1-13.2L444,92.5z"/>
+	<path class="st10" d="M371.3,92.2h47.9v47.9h-47.9V92.2z"/>
+	<path class="st9" d="M80.7,50.5L127,38.1l12.4,46.3L93.1,96.8L80.7,50.5z"/>
+</g>
+</svg>
